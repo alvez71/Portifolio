@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header a{
+    font-family: "Poppins", sans-serif;
+    color: #4a90e2;
+}
+
+
+body {
+    margin: 0;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {  /*Aqui fica o card*/
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.card a:hover {
+    color: #20446e;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+nav {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0; /* Gruda no topo absoluto */
+    left: 0; /* Garante que comece do canto esquerdo */
+    width: 100%; /* Faz a barra ocupar toda a largura */
+    z-index: 1000; /* Garante que ela fique por cima de todos os cards */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s
+}
+
+#projects {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.destaque-1 {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+#about {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#about p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about img {
+    width: 370px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border: 50%;
+}
+
+.destaque-andamento {
+    color: rgb(255, 192, 47)
+}
+
+.destaque-concluido {
+    color: green;
+}
+
+footer {
+    background-color: #ebebeb;
+    border-top: 1px solid #4a90e2;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: #4583ca;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
